@@ -1,0 +1,83 @@
+.note-item {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.note-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  word-break: break-word;
+  flex: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.note-content {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.note-date {
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .note-item {
+    padding: 15px;
+  }
+  
+  .note-title {
+    font-size: 1.1rem;
+  }
+  
+  .note-content {
+    font-size: 0.95rem;
+  }
+}
